@@ -1,6 +1,6 @@
 
 
-import Form from "./pages/Form.js";
+import Form from "./pages/Form.jsx";
 import './App.css';
 
 function App() {
