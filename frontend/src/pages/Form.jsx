@@ -61,12 +61,19 @@ export default function Form() {
         </button>
       </form>
 
-      {prediction && (
-        <div className="result-box">
-          <h2>Prediction Result:</h2>
-          <p>{prediction}</p>
-        </div>
-      )}
+      {prediction ? (
+        prediction == 0 ? (
+          <div className="result-box">
+            <h2>Prediction Result:</h2>
+            <p>Tsunami Not Expected</p>
+          </div>
+        ) : (
+          <div className="result-box">
+            <h2>Prediction Result:</h2>
+            <p>Tsunami Expected!!</p>
+          </div>
+        )
+      ) : null}
     </div>
   );
 }

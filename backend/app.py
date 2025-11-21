@@ -25,7 +25,7 @@ def receive():
     df = df.reindex(columns=colnames)
 
     # predict the values
-    prediction = list(model.predict(df))
+    prediction = model.predict(df)[0]
 
     return jsonify({"prediction": str(prediction)})
 
