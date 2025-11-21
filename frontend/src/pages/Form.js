@@ -37,7 +37,7 @@ export default function Form() {
       headers:{
         "Content-Type":"application/json",
       },
-      body:JSON.stringify({name:"Test",age:20})
+      body:JSON.stringify({"name":"Test","age":"20"})
     });
 
     const data=await response.json();
