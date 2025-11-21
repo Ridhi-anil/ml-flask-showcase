@@ -16,8 +16,8 @@ export default function Form() {
     depth: "",
     latitude: "",
     longitude: "",
-    year: "",
-    month: "",
+    Year: "",
+    Month: "",
   });
 
   function handleChange(event) {
